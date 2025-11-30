@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Wed Design</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        background-image: url(./sqi/skye.jpeg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        position: relative;
+        border-top: 0px;
+    }
+    .newclass {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 10vh;
+    }
+    .newsclass img{
+        width: 100%;
+        height: auto;
+    }
+
+    .newsclass img:nth-child(2){
+        position: absolute;
+        top: -10px;
+        left: 800px;
+        animation: move2 3s linear infinite;
+        height: 150px;
+    }
+    .newsclass img:nth-child(3){
+        position: absolute;
+        top: 20px;
+        left: 600px;
+        animation: move3 5s linear infinite;
+        height: 300px;
+    }
+        /* padding: 20px;
+        background-color: green;
+        width: 100%; */
+    
+    .walkway {
+        position: relative;
+        background-color: green;
+        width: 100%;
+    }
+    .bird{
+        position: absolute;
+        top: -70px;
+        left: 200px;
+    }
+    .bird img{
+        height: 250px;
+    }
+    .bird1 {
+        position: absolute;
+        top: -70px;
+        left: 500px;
+    }
+    .light {
+        display: flex;
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        gap: 300px;
+    }
+    .light img{
+        height: 200px;
+    }
+    .road{
+    width: 100%;
+    height: 30vh;
+    /* margin-top: 52px; */
+    position: relative;
+}
+    /* .road {
+        
+        width: 100%;
+        height: 30vh;
+        background-image: url("https://trafficanimation.netlify.app/images/road.jfif");
+        background-size: cover;
+        background-position: center;
+    } */
+    .newclasses {
+        padding: 40px;
+        background-color: grey;
+    }
+    /* .road img{ */
+        /* display: flex; */
+        /* position: absolute; */
+        /* width: 100%; */
+        /* height: 30vh; */
+    .road img:nth-last-child{
+        width: 100%;
+    }
+    .road2 img{
+        /* display: flex; */
+        position: absolute;
+        width: 100%;
+        height: 30vh;
+    }
+    .move {
+        position: relative;
+    }
+    .walkway img:nth-child(1) {
+    /* width: 150px;
+    position: absolute;
+    right: 1700px;
+    animation: woman  9s linear  infinite forwards ; */
+    width: 150px;
+    position: absolute;
+    right: 1700px;
+    animation: move1  9s linear  infinite forwards ;
+}
+    .move img:nth-child(1) {
+        /* position: absolute;
+        top: -10px;
+        left: 800px;
+        animation: move2 3s linear infinite;
+        height: 150px; */
+    }
+    .move img:nth-child(2) {
+        /* position: absolute;
+        top: 20px;
+        left: 600px;
+        animation: move3 5s linear infinite;
+        height: 300px; */
+    }
+    .walkway img:nth-child(2) {
+        width: 150px;
+        position: absolute;
+        /* top: 190px; */
+        /* left: 1400px; */
+        animation: move4 7s linear infinite;
+        height: 150px;
+    }
+
+    .road img:nth-child(1){
+        position: absolute;
+    }
+    .move img:nth-child(1) {
+        position: absolute;
+        /* top: 390px; */
+        /* left: 1500px; */
+        animation: move5 10s linear infinite;
+        height: 150px;
+        width: 200px;
+    }
+    .move img:nth-child(2) {
+        width: 150;
+        position: absolute;
+        /* top: 750px; */
+        /* left: 5px; */
+        animation: move6 7s linear infinite;
+        height: 100px;
+    }
+    .road img:nth-child(1) {
+        position: absolute;
+        /* top: 750px; */
+        /* left: 20px; */
+        animation: move7 7s linear infinite;
+        height: 100px;
+        width: 150px;
+    }
+    .road img:nth-child(2) {
+        position: absolute;
+        /* top: 750px; */
+        /* left: 5px; */
+        animation: move8 9s linear infinite;
+        height: 100px;
+        width: 150px;
+    }
+    .road img:nth-child(3) {
+        position: absolute;
+        /* top: 270px; */
+        /* left: 1200px; */
+        animation: move9 8s linear infinite;
+        height: 150px;
+        width: 150px;
+    }
+    .move img:nth-child(3) {
+        position: absolute;
+        /* top: 320px; */
+        /* left: 1400px; */
+        animation: move10 6s linear infinite;
+        height: 150px;
+        width: 200px;
+    }
+    .road2 img:nth-child(2) {
+        width: 150px;
+        position: absolute;
+        /* top: 680px; */
+        /* left: 10px; */
+        animation: move11 4s linear infinite;
+        height: 60px;
+    }
+
+    @keyframes move1 {
+        from {
+            transform: translate(0px,0px); 
+        }
+        to { 
+            transform: translate(1500px,0px); 
+        }
+    }
+    @keyframes move2 {
+        from { 
+            transform: translate(1500px,0px);
+        }
+        to { 
+            transform: translate(0px,0px);
+        }
+    }
+    @keyframes move3 {
+        from { 
+            transform: translate(1500px,0px);
+        }
+        to { 
+            transform: translate(0px,0px);
+        }
+    }
+    @keyframes move4 {
+        from {
+            transform: translate(1500px,0px); 
+        }
+        to { 
+            transform: translate(0px,0px); 
+        }
+    }
+    @keyframes move5 {
+        from {
+            transform: translate(1500px,0px); 
+        }
+        to { 
+            transform: translate(0px,0px); 
+        }
+    }
+    @keyframes move6 {
+        from {
+            transform: translate(0px,0px); 
+        }
+        to { 
+            transform: translate(1500px,0px); 
+        }
+    }
+    @keyframes move7 {
+        from {
+            transform: translate(0px,0px); 
+        }
+        to { 
+            transform: translate(1500px,0px); 
+        }
+    }
+    @keyframes move8 {
+        from {
+            transform: translate(0px,0px); 
+        }
+        to { 
+            transform: translate(1500px,0px); 
+        }
+    }
+    @keyframes move9 {
+        from {
+            transform: translate(1500px,0px); 
+        }
+        to { 
+            transform: translate(0px,0px); 
+        }
+    }
+    @keyframes move10 {
+        from {
+            transform: translate(1500px,0px); 
+        }
+        to { 
+            transform: translate(0px,0px); 
+        }
+    }
+    @keyframes move11 {
+        from {
+            transform: translate(0px,0px); 
+        }
+        to { 
+            transform: translate(1500px,0px); 
+        }
+    }
+</style>
+<body>
+    <div class="container">
+    <!-- <div class="newclass"><img src="./sqi/skye.jpeg" alt=""></div> -->
+    <div class="newsclass">
+        <img src="./sqi/ilustrasion-scene.png" alt="">
+        <img src="./sqi/Aeroplane_2-removebg-preview.png" alt="">
+        <img src="./sqi/air-helicopter-removebg-preview.png" alt="">
+    </div>
+    </div>
+    <!-- <div class="newsclasses"> -->
+    <div class="walkway">
+        <img src="./sqi/pedestrian-color-vector-removebg-preview.png" alt="">
+        <img src="./sqi/back-view-man-waving-hand-free-vector-removebg-preview.png" alt="">
+    </div>
+    <div class="road">
+        <!-- <img src="./sqi/pedestrian-color-vector-removebg-preview.png" alt="">
+        <img src="./sqi/back-view-man-waving-hand-free-vector-removebg-preview.png" alt=""> -->
+        <!-- <img src="./sqi/download-removebg-preview (4).png" alt="">
+        <img src="./sqi/download-removebg-preview (5).png" alt=""> -->
+        <img src="./sqi/download__1_-removebg-preview (2).png" alt="">
+        <img src="./sqi/download__1_-removebg-preview (3).png" alt="">
+        <img src="./sqi/download__3_-removebg-preview (1).png" alt="">
+        <img src="https://trafficanimation.netlify.app/images/road.jfif" alt="">
+    </div>
+    <div class="newclasses"></div>
+    <div class="road2">
+        <img src="https://trafficanimation.netlify.app/images/road.jfif" alt="">
+        <img src="./sqi/sport car.png" alt="">
+    </div>
+    <div class="bird"><img src="./sqi/birds-circling-in-the-sky-vector-21599876-removebg-preview.png" alt=""></div>
+    <div class="bird1"><img src="./sqi/0-142_bird-silhouette-flying-silhouette-birds-vector-png-transparent-removebg-preview.png" alt=""></div>
+    <div class="light">
+        <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
+        <img src="./sqi/one_way-removebg-preview.png" alt="">
+        <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
+        <img src="./sqi/one_way-removebg-preview.png" alt="">
+        <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
+    </div>
+    <div class="move">
+        <!-- <img src="./sqi/pedestrian-color-vector-removebg-preview.png" alt=""> -->
+        <!-- <img src="./sqi/back-view-man-waving-hand-free-vector-removebg-preview.png" alt=""> -->
+        <img src="./sqi/download-removebg-preview (4).png" alt="">
+        <img src="./sqi/download-removebg-preview (5).png" alt="">
+        <!-- <img src="./sqi/download__1_-removebg-preview (2).png" alt=""> -->
+        <!-- <img src="./sqi/download__1_-removebg-preview (3).png" alt="">
+        <img src="./sqi/download__3_-removebg-preview (1).png" alt=""> -->
+        <img src="./sqi/download__4_-removebg-preview.png" alt="">
+        <!-- <img src="./sqi/sport car.png" alt=""> -->
+    </div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-clone</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="cloud">
+
+        <img src="./imgi_2_ilustrasion-scene.png" alt="" class="house">
+        <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="stlight">
+        <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="stlight2">
+        <img src="./imgi_18_birds-circling-in-the-sky-vector-21599876-removebg-preview.png" alt="bird" class="birds">
+        <img src="./imgi_17_0-142_bird-silhouette-flying-silhouette-birds-vector-png-transparent-removebg-preview.png" alt="ird" class="brid">
+        <img src="./superman.jpg" alt="superman" class="superman"> -->
+         <!-- <img src="./imgi_4_air-helicopter-removebg-preview.png" alt="heli" class="heli">
+         <img src="./imgi_3_Aeroplane_2-removebg-preview.png" alt="air" class="air">
+       -->
+        <!--<img src="./istockphoto-947314334-612x612.jpg" alt="" class="sun"> -->        
+    <!-- </div>    
+    <div class="titi">
+            <img src="./road (1).jfif" alt="" class="road">
+            <img src="./imgi_9_pedestrian-color-vector-removebg-preview.png" alt="" class="woman">
+            <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="light">
+            <img src="./imgi_10_back-view-man-waving-hand-free-vector-removebg-preview.png" alt="" class="man">
+            <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="light2">
+            <img src="./taxi.png" alt="taxi" class="taxi">
+            <img src="./bike.png" alt="bike" class="bike">
+        </div>
+    
+
+    <div class="way">
+    
+            <img src="./road (1).jfif" alt="" class="road2">
+            <img src="./imgi_14_sport car.png" alt="" class="car">
+            <img src="./truck.png" alt="truck1" class="truck1">
+            <img src="./bicycle.png" alt="bic" class="bic">
+            <img src="./truck2.png" alt="truck2" class="truck2">
+            
+    </div>
+</body>
+</html> -->
