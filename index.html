@@ -27,22 +27,19 @@
         width: 100%;
         height: 10vh;
     }
-    .newsclass img{
-        width: 100%;
-        height: auto;
-    }
+    
 
     .newsclass img:nth-child(2){
         position: absolute;
         top: -10px;
-        left: 800px;
+        left: 1500px;
         animation: move2 3s linear infinite;
         height: 150px;
     }
     .newsclass img:nth-child(3){
         position: absolute;
         top: 20px;
-        left: 600px;
+        left: 1600px;
         animation: move3 5s linear infinite;
         height: 300px;
     }
@@ -54,6 +51,7 @@
         position: relative;
         background-color: green;
         width: 100%;
+        height: 20vh;
     }
     .bird{
         position: absolute;
@@ -68,12 +66,12 @@
         top: -70px;
         left: 500px;
     }
-    .light {
+    .light img{
         display: flex;
         position: absolute;
-        top: 420px;
-        left: 50px;
-        gap: 300px;
+        top: 550px;
+        /* left: 50px; */
+        /* gap: 300px; */
     }
     .light img{
         height: 200px;
@@ -95,14 +93,16 @@
     .newclasses {
         padding: 40px;
         background-color: grey;
+        position: relative;
     }
     /* .road img{ */
         /* display: flex; */
         /* position: absolute; */
         /* width: 100%; */
         /* height: 30vh; */
-    .road img:nth-last-child{
+    .road img:nth-child(4){
         width: 100%;
+        height: 30vh;
     }
     .road2 img{
         /* display: flex; */
@@ -113,6 +113,12 @@
     .move {
         position: relative;
     }
+    /* .walkway {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        background-color: #f0f0f0;
+    } */
     .walkway img:nth-child(1) {
     /* width: 150px;
     position: absolute;
@@ -208,7 +214,7 @@
 
     @keyframes move1 {
         from {
-            transform: translate(0px,0px); 
+            transform: translate(-1500px,0px); 
         }
         to { 
             transform: translate(1500px,0px); 
@@ -219,7 +225,7 @@
             transform: translate(1500px,0px);
         }
         to { 
-            transform: translate(0px,0px);
+            transform: translate(-1800px,0px);
         }
     }
     @keyframes move3 {
@@ -227,15 +233,15 @@
             transform: translate(1500px,0px);
         }
         to { 
-            transform: translate(0px,0px);
+            transform: translate(-1800px,0px);
         }
     }
     @keyframes move4 {
         from {
-            transform: translate(1500px,0px); 
+            transform: translate(1600px,0px); 
         }
         to { 
-            transform: translate(0px,0px); 
+            transform: translate(-1600px,0px); 
         }
     }
     @keyframes move5 {
@@ -243,12 +249,12 @@
             transform: translate(1500px,0px); 
         }
         to { 
-            transform: translate(0px,0px); 
+            transform: translate(-1600px,0px); 
         }
     }
     @keyframes move6 {
         from {
-            transform: translate(0px,0px); 
+            transform: translate(-1500px,0px); 
         }
         to { 
             transform: translate(1500px,0px); 
@@ -256,7 +262,7 @@
     }
     @keyframes move7 {
         from {
-            transform: translate(0px,0px); 
+            transform: translate(-1500px,0px); 
         }
         to { 
             transform: translate(1500px,0px); 
@@ -264,7 +270,7 @@
     }
     @keyframes move8 {
         from {
-            transform: translate(0px,0px); 
+            transform: translate(-1500px,0px); 
         }
         to { 
             transform: translate(1500px,0px); 
@@ -275,7 +281,7 @@
             transform: translate(1500px,0px); 
         }
         to { 
-            transform: translate(0px,0px); 
+            transform: translate(-1700px,0px); 
         }
     }
     @keyframes move10 {
@@ -283,12 +289,12 @@
             transform: translate(1500px,0px); 
         }
         to { 
-            transform: translate(0px,0px); 
+            transform: translate(-1700px,0px); 
         }
     }
     @keyframes move11 {
         from {
-            transform: translate(0px,0px); 
+            transform: translate(-1500px,0px); 
         }
         to { 
             transform: translate(1500px,0px); 
@@ -319,20 +325,27 @@
         <img src="./sqi/download__3_-removebg-preview (1).png" alt="">
         <img src="https://trafficanimation.netlify.app/images/road.jfif" alt="">
     </div>
-    <div class="newclasses"></div>
+    <div class="light">
+        <div class="newclasses"></div>
+        <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
+        <img src="./sqi/one_way-removebg-preview.png" alt="">
+        <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
+        <img src="./sqi/one_way-removebg-preview.png" alt="">
+        <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
+    </div>
     <div class="road2">
         <img src="https://trafficanimation.netlify.app/images/road.jfif" alt="">
         <img src="./sqi/sport car.png" alt="">
     </div>
     <div class="bird"><img src="./sqi/birds-circling-in-the-sky-vector-21599876-removebg-preview.png" alt=""></div>
     <div class="bird1"><img src="./sqi/0-142_bird-silhouette-flying-silhouette-birds-vector-png-transparent-removebg-preview.png" alt=""></div>
-    <div class="light">
+    <!-- <div class="light">
         <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
         <img src="./sqi/one_way-removebg-preview.png" alt="">
         <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
         <img src="./sqi/one_way-removebg-preview.png" alt="">
         <img src="./sqi/206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="">
-    </div>
+    </div> -->
     <div class="move">
         <!-- <img src="./sqi/pedestrian-color-vector-removebg-preview.png" alt=""> -->
         <!-- <img src="./sqi/back-view-man-waving-hand-free-vector-removebg-preview.png" alt=""> -->
@@ -346,47 +359,3 @@
     </div>
 </body>
 </html>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation-clone</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<body>
-    <div class="cloud">
-
-        <img src="./imgi_2_ilustrasion-scene.png" alt="" class="house">
-        <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="stlight">
-        <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="stlight2">
-        <img src="./imgi_18_birds-circling-in-the-sky-vector-21599876-removebg-preview.png" alt="bird" class="birds">
-        <img src="./imgi_17_0-142_bird-silhouette-flying-silhouette-birds-vector-png-transparent-removebg-preview.png" alt="ird" class="brid">
-        <img src="./superman.jpg" alt="superman" class="superman"> -->
-         <!-- <img src="./imgi_4_air-helicopter-removebg-preview.png" alt="heli" class="heli">
-         <img src="./imgi_3_Aeroplane_2-removebg-preview.png" alt="air" class="air">
-       -->
-        <!--<img src="./istockphoto-947314334-612x612.jpg" alt="" class="sun"> -->        
-    <!-- </div>    
-    <div class="titi">
-            <img src="./road (1).jfif" alt="" class="road">
-            <img src="./imgi_9_pedestrian-color-vector-removebg-preview.png" alt="" class="woman">
-            <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="light">
-            <img src="./imgi_10_back-view-man-waving-hand-free-vector-removebg-preview.png" alt="" class="man">
-            <img src="./imgi_12_206-2064127_selux-discera-street-lights-pinterest-of-modern-street-street-light-removebg-preview.png" alt="" class="light2">
-            <img src="./taxi.png" alt="taxi" class="taxi">
-            <img src="./bike.png" alt="bike" class="bike">
-        </div>
-    
-
-    <div class="way">
-    
-            <img src="./road (1).jfif" alt="" class="road2">
-            <img src="./imgi_14_sport car.png" alt="" class="car">
-            <img src="./truck.png" alt="truck1" class="truck1">
-            <img src="./bicycle.png" alt="bic" class="bic">
-            <img src="./truck2.png" alt="truck2" class="truck2">
-            
-    </div>
-</body>
-</html> -->
